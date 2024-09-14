@@ -14,6 +14,15 @@
     "categories": {
       "auth": {
         "monitoramentotesta1f36d19": {}
+      },
+      "function": {
+        "lambdafunctionteste01": {
+          "deploymentBucketName": "amplify-monitoramentotest-dev-8b514-deployment",
+          "s3Key": "amplify-builds/lambdafunctionteste01-7141476a454e6a726a68-build.zip"
+        }
+      },
+      "api": {
+        "apiteste": {}
       }
     }
   }

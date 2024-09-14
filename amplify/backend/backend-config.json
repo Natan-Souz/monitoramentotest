@@ -1,4 +1,20 @@
 {
+  "api": {
+    "apiteste": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "lambdafunctionteste01"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
   "auth": {
     "monitoramentotesta1f36d19": {
       "customAuth": false,
@@ -25,6 +41,31 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "function": {
+    "lambdafunctionteste01": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_lambdafunctionteste01_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "lambdafunctionteste01"
+        }
+      ]
+    },
+    "AMPLIFY_function_lambdafunctionteste01_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "lambdafunctionteste01"
+        }
+      ]
     }
   }
 }
